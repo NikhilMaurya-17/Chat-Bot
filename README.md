@@ -1,12 +1,86 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🤖 Multi-AI Assistant (React + Vite)
 
-Currently, two official plugins are available:
+A React + Vite application that integrates Google AI, OpenAI (ChatGPT), and DeepSeek AI into a single interface.
+Users can ask questions and get responses from different AI models, each with their own functionality and unique strengths.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features
 
-## Expanding the ESLint configuration
+🔹 Multi-AI support → Choose between Google AI, OpenAI, or DeepSeek AI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔹 Real-time responses with smooth UI
+
+🔹 Component-based architecture for easy maintenance
+
+🔹 Environment variables for secure API key management (.env.local)
+
+🔹 Hot Module Reload (HMR) with Vite for fast development
+
+🚀 Getting Started
+1️⃣ Clone the repository
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Setup environment variables
+
+Copy the example file:
+
+cp .env.example .env.local
+
+
+Edit .env.local and add your API keys:
+
+VITE_OPENAI_API_KEY=your_openai_key_here
+VITE_GOOGLE_API_KEY=your_google_key_here
+VITE_DEEPSEEK_API_KEY=your_deepseek_key_here
+
+
+⚠️ Your .env.local is ignored by Git → safe from being uploaded.
+
+4️⃣ Run the app
+npm run dev
+
+
+Visit 👉 http://localhost:5173
+
+📂 Project Structure
+src/
+│-- Components/
+│   └-- Theme/          # UI theme handling
+│-- assistants/
+│   ├-- openai.js       # OpenAI API integration
+│   ├-- googleai.js     # Google AI API integration
+│   └-- deepseekai.js   # DeepSeek AI API integration
+│-- App.jsx
+.env.example
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repo
+
+Create a new branch
+
+Commit and push your changes
+
+Open a Pull Request
+
+📜 License
+
+This project is licensed under the MIT License.
+
+🙌 Acknowledgements
+
+React
+
+Vite
+
+OpenAI
+
+Google AI
+
+DeepSeek AI
